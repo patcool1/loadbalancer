@@ -1,13 +1,13 @@
-Pipeline{
+pipeline {
     agent any
-    stages{
-    stage('first stage'){
-        steps{
-            sh 'echo hello'
+    stages {
+        stage ('first stage'){
+            steps{
+                sh 'echo hello'
         }
     }
-    stage('clean artifact'){
-       steps{
+    stage ('clean artifact'){
+       steps {
         sh 'echo hi'
       } 
     }
